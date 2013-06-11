@@ -40,6 +40,7 @@
 			<ul class="nav nav-list bs-docs-sidenav affix-top">
 				<li class="active"><a href="#about"><i class="icon-chevron-right"></i> About</a></li>
 				<li class=""><a href="#download"><i class="icon-chevron-right"></i> Download</a></li>
+				<li class=""><a href="#roadmap"><i class="icon-chevron-right"></i> Roadmap (draft)</a></li>
 				<li class=""><a href="#contact"><i class="icon-chevron-right"></i> Contact</a></li>
 			</ul>
 		</div>
@@ -54,6 +55,9 @@
 				<p class="lead">
 					LizardFS is an Open Source Distributed File System licenced on GPLv3.
 				</p>
+				LizardFS is a networking, distributed file system.<br>
+				It spreads data over several physical locations (servers), which are visible to a user as one resource (available through <a href="http://fuse.sourceforge.net/" target="_blanc">FUSE</a>).<br>
+				LizardFS is fault tolerant at data level, not completely on metadata level.<br>
 				The goals behind LizardFS are:
 				<ul>
 					<li>
@@ -97,6 +101,52 @@
 				<div class="row-fluid">
 					<div class="span6">
 						<p><a class="btn btn-large btn-primary" href="https://github.com/lizardfs/lizardfs">LizardFS at github</a></p>
+					</div>
+				</div>
+			</section>
+
+			<!-- Roadmap
+			================================================== -->
+			<section id="roadmap">
+				<div class="page-header">
+					<h1>Roadmap</h1>
+				</div>
+				<div class="row-fluid">
+					<div class="span9">
+						There are few things that we are going to do with LizardFS:
+						<ol>
+							<li>convert build system to cmake, compiler to g++ (with opton to use clang++)</li>
+							<li>new code written in c++11, gradually rewrite code to c++</li>
+							<li>preparation of test bed for continuous and manual end-to-end tests</li>
+							<li>profiling tools research</li>
+							<li>introduce unit test framework (googletest) and add few example tests, all new code should have tests</li>
+							<li>create environment and code instrumentation to run single-leaf load test (profiling specific functions)</li>
+							<li>add logging library and tracing tool allowing measurements of performance for cross function and cross-RPC operations</li>
+							<li>cluster load test</li>
+							<li>create community infrastructure for receiving contributions</li>
+							<li>fix packages for debian for more seamless deployment</li>
+							<li>vmware driver</li>
+							<li>define backward compatibility policy (time n-months back, n-versions back)</li>
+							<li>multi-read</li>
+							<li>multi-write</li>
+							<li>improve monitoring of cluster level healthiness and performance</li>
+							<li>High Availability for master - add master failover replicas (master-slave model with automatic failover)</li>
+							<li>online upgrade</li>
+							<li>web management</li>
+							<li>[rhodos] block device</li>
+							<li>client for windows</li>
+							<li>compare local disk file systems (xfs, ext, btrfs)</li>
+							<li>compiler tests (gnu, llvm, ...)</li>
+							<li>multiplatform support - think over, prepare compatibility table</li>
+							<li>ssd support, goal 2.0 (level goal)</li>
+							<li>introduce alternative to replication, e.g. erasure codes</li>
+							<li>IPv6</li>
+							<li>quota system for files and space</li>
+							<li>rate limiting</li>
+							<li>global lock</li>
+							<li>sync in chunkserver</li>
+							<li>adaptivity</li>
+						</ol>
 					</div>
 				</div>
 			</section>

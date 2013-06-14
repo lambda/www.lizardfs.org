@@ -1,0 +1,36 @@
+		@font-face {
+			font-family: "Aller Reular";
+			src: url(/fonts/Aller_Rg.ttf) format("truetype");
+		}
+		@font-face {
+			font-family: "Aller Display";
+			src: url(/fonts/AllerDisplay.ttf) format("truetype");
+		}
+		header{
+			font-family: "Aller Reular";
+		}
+		header div h1 b{
+			font-family: "Aller Display";
+		}
+		header div img {
+			float: left;
+		}
+		header div h1 {
+			margin: 0!important;
+			padding: 0!important;
+			border: 0!important;
+			font-size: 100%!important;
+			font: inherit!important;
+			vertical-align: -baseline!important;
+			line-height: 50px!important;
+			font-size: 50px!important;
+		}
+		header div p {
+			margin: 0!important;
+			padding: 0!important;
+			border: 0!important;
+			font-size: 25px!important;
+			font-weight: 300!important;
+			line-height: 30px!important;
+			vertical-align: 50px!important;
+		}

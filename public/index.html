@@ -56,15 +56,15 @@
 					<h1>About LizardFS</h1>
 				</div>
 				<p class="lead">
-					LizardFS is an Open Source Distributed File System licenced on GPLv3.
+					LizardFS is an Open Source Distributed File System licenced under GPLv3.
 				</p>
-				LizardFS is a networking, distributed file system.<br>
+				LizardFS is a networked, distributed file system.<br>
 				It spreads data over several physical locations (servers), which are visible to a user as one resource (available through <a href="http://fuse.sourceforge.net/" target="_blank">FUSE</a>).<br>
-				LizardFS is fault tolerant at data level, not (yet) completely on metadata level.<br>
+				LizardFS is fault tolerant at the data level, not (yet) completely on the metadata level.<br>
 				<b>The goals behind LizardFS are:</b>
 				<ul>
 					<li>
-						Providing free:
+						To provide a free,
 						<ul>
 							<li>Highly Reliable,</li>
 							<li>Highly Scalable,</li>
@@ -74,22 +74,22 @@
 						</ul>
 					</li>
 					<li>
-						Adapting modern agile development of distributed system in C++:
+						To adapt modern agile development practices of a distributed system in C++:
 						<ul>
-							<li>git - <a href="https://github.com/lizardfs/lizardfs">https://github.com/lizardfs/lizardfs</a>,</li>
-							<li>jenkins (for access please contact <script>mail("contact","lizardfs",1,"")</script>),</li>
-							<li>gerrit (for access please contact <script>mail("contact","lizardfs",1,"")</script>),</li>
+							<li>Git - <a href="https://github.com/lizardfs/lizardfs">https://github.com/lizardfs/lizardfs</a>,</li>
+							<li>Jenkins (for access please contact <script>mail("contact","lizardfs",1,"")</script>),</li>
+							<li>Gerrit (for access please contact <script>mail("contact","lizardfs",1,"")</script>),</li>
 							<li>unit testing.</li>
 						</ul>
 					</li>
-					<li>Active cooperation with open source community.</li>
-					<li>Developing test infrastructure standards for distributed file systems.</li>
+					<li>To actively cooperate with the open source community.</li>
+					<li>To develop test infrastructure standards for distributed file systems.</li>
 				</ul>
 				LizardFS is a fork of <a href="http://moosefs.org" target="_blank">MooseFS</a>.<br>
-				<b>Motivations behind creating this fork are:</b>
+				<b>The motivations behind creating this fork are:</b>
 				<ul>
-					<li>rare updates of git repository,</li>
-					<li>lack of community (only 2 developers made commits to public git repository at sourceforge),</li>
+					<li>rare updates of the MooseFS Git repository,</li>
+					<li>lack of community (only 2 developers made commits to the public Git repository at sourceforge),</li>
 					<li>increase in the number of possible contributors with a simultaneous lack of response on the part of moosefs maintain,</li>
 					<li>our ability to perfect the tool.</li>
 				</ul>
@@ -118,21 +118,21 @@
 					<div class="span9">
 						There are few things that we are going to do with LizardFS:
 						<ol>
-							<li>convert build system to cmake, compiler to g++ (with opton to use clang++)</li>
-							<li>new code written in c++11, gradually rewrite code to c++</li>
-							<li>preparation of test bed for continuous and manual end-to-end tests</li>
-							<li>profiling tools research</li>
-							<li>introduce unit test framework (googletest) and add few example tests, all new code should have tests</li>
-							<li>create environment and code instrumentation to run single-leaf load test (profiling specific functions)</li>
-							<li>add logging library and tracing tool allowing measurements of performance for cross function and cross-RPC operations</li>
+							<li>convert the build system to cmake, the compiler to g++ (with opton to use clang++)</li>
+							<li>write new code in c++11, gradually rewrite code to c++</li>
+							<li>prepare a test bed for continuous and manual end-to-end tests</li>
+							<li>research profiling tools</li>
+							<li>introduce a unit test framework (googletest) and add few example tests, all new code should have tests</li>
+							<li>create an environment and code instrumentation to run single-leaf load test (profiling specific functions)</li>
+							<li>add a logging library and tracing tool allowing measurements of performance for cross function and cross-RPC operations</li>
 							<li>cluster load test</li>
-							<li>create community infrastructure for receiving contributions</li>
-							<li>fix packages for debian for more seamless deployment</li>
-							<li>vmware driver</li>
-							<li>define backward compatibility policy (time n-months back, n-versions back)</li>
-							<li>multi-read</li>
-							<li>multi-write</li>
-							<li>improve monitoring of cluster level healthiness and performance</li>
+							<li>create a community infrastructure for receiving contributions</li>
+							<li>fix the Debian packages for more seamless deployment</li>
+							<li>write a VMware driver</li>
+							<li>define a backward compatibility policy (time n-months back, n-versions back)</li>
+							<li>implement multi-read</li>
+							<li>implement multi-write</li>
+							<li>improve monitoring of cluster level health and performance</li>
 							<li>High Availability for master - add master failover replicas (master-slave model with automatic failover)</li>
 							<li>online upgrade</li>
 							<li>web management</li>
